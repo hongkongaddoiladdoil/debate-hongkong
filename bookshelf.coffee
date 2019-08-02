@@ -1,10 +1,10 @@
 knex = require('knex')({
   client: 'pg',
   connection: {
-    host     : '127.0.0.1',
-    user     : 'postgres',
-    password : '',
-    database : 'chatter',
+    host     : 'ec2-107-22-228-141.compute-1.amazonaws.com',
+    user     : 'rsysjgxbslpflh',
+    password : '287174891dda891149826f40d265714ca36b7634bd9bee791b66c65b1d6aa5e1',
+    database : 'dcr7erifg4dnkb',
     charset  : 'utf8'
   }
 });
