@@ -1,1 +1,1 @@
-web: server.coffee bookshelf.coffee
+web: coffee server.coffee
