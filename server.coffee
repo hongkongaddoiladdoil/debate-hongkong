@@ -103,6 +103,6 @@ io.on 'connection', (socket) ->
       users.splice(users.indexOf(socket.handshake.session.user.login), 1)
       io.emit('users', users)
 
-http.listen 5000, () ->
+http.listen (process.env.PORT || 5000), () ->
   if env != 'test'
     console.log 'listening on *:5000'
