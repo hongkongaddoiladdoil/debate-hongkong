@@ -1,1 +1,1 @@
-web: yarn start
+web: server.coffee bookshelf.coffee
