@@ -46,6 +46,9 @@ app.get '/login', (req, res) ->
 app.get '/post_question', (req, res) ->
   res.sendFile(path.join(__dirname, 'views/post_question.html'))
 
+app.get '/post_question', (req, res) ->
+  res.sendFile(path.join(__dirname, 'views/post_question.html'))
+
 app.post '/login', (req, res) ->
   new User().where('login', req.body.login).fetch().then((user) =>
     if user && bcrypt.compareSync(req.body.password, user.get('password'))
